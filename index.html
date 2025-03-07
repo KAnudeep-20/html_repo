@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Service Connect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        
+        /* Navigation Bar Styles */
+        nav {
+           
+            padding: 15px 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            position: relative;
+            padding: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px;
+            display: block;
+            transition: background-color 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            background-color: #1e2a8a;
+            border-radius: 5px;
+      
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            display: none;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            width: 200px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+        .dropdown a {
+            color: #333;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease-in-out;
+
+        }
+        .dropdown a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Hover effect for the location dropdown */
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        /* Section Styles */
+        header {
+            background-color: #3f51b5;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            background-image: url('https://bookmyinfo.com/wp-content/uploads/2024/10/Best-Event-Management-Companies-In-Mumbai-1-1068x601.jpg');
+@media (max-width: 768px) {
+            background-image {
+                width: 40%; /* In smaller screens, image will cover 40% */
+            }
+        }
+
+        @media (max-width: 480px) {
+            background-image {
+                width: 60%; /* On very small screens, image will cover 60% */
+            }
+        }
+
+        }
+        @media (max-width: 768px) {
+            background-image {
+                width: 40%; /* In smaller screens, image will cover 40% */
+            }
+        }
+
+        @media (max-width: 480px) {
+            background-image {
+                width: 60%; /* On very small screens, image will cover 60% */
+            }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #3f51b5;
+        }
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service-card1 {
+            width: 350px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .service-card1:hover {
+            transform: scale(1.05);
+        }
+        .service-card1 img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service-card1 h3 {
+            font-size: 1.8em;
+            margin: 20px 0;
+        }
+        .service-card1 p {
+            padding: 0 20px;
+            font-size: 1.1em;
+            color: #666;
+        }
+        
+         .service-card2 {
+            width: 350px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .service-card2:hover {
+            transform: scale(1.05);
+        }
+        .service-card2 img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service-card2 h3 {
+            font-size: 1.8em;
+            margin: 20px 0;
+        }
+        .service-card2 p {
+            padding: 0 20px;
+            font-size: 1.1em;
+            color: #666;
+        }
+
+         .service-card3 {
+            width: 350px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .service-card3:hover {
+            transform: scale(1.05);
+        }
+        .service-card3 img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service-card3 h3 {
+            font-size: 1.8em;
+            margin: 20px 0;
+        }
+        .service-card3 p {
+            padding: 0 20px;
+            font-size: 1.1em;
+            color: #666;
+        }
+
+         .service-card4 {
+            width: 350px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .service-card4:hover {
+            transform: scale(1.05);
+        }
+        .service-card4 img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service-card4 h3 {
+            font-size: 1.8em;
+            margin: 20px 0;
+        }
+        .service-card4 p {
+            padding: 0 20px;
+            font-size: 1.1em;
+            color: #666;
+        }
+
+         .service-card5 {
+            width: 350px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .service-card5:hover {
+            transform: scale(1.05);
+        }
+        .service-card5 img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service-card5 h3 {
+            font-size: 1.8em;
+            margin: 20px 0;
+        }
+        .service-card5 p {
+            padding: 0 20px;
+            font-size: 1.1em;
+            color: #666;
+        }
+        .popular img {
+              width: 30%;
+            height: 200px;
+            padding: 5px;
+            object-fit: cover;
+        }
+
+
+        .footer {
+            background-color: #3f51b5;    
+            color: white;
+            text-align: center;
+            padding: 20px;
+            background-image: url('https://bookmyinfo.com/wp-content/uploads/2024/10/Best-Event-Management-Companies-In-Mumbai-1-1068x601.jpg');
+        }
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+`<body>
+<header>
+<h1>DecoraGo</h1>
+        <p>Connecting You to the Best Event Service Providers</p>
+  
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+               <a href="#">Services</a>
+                <div class="dropdown">
+                    <a href="#">Decorations</a>
+                    <a href="#">Catering Services</a>
+                    <a href="#">Photography</a>
+                    <a href="#">DJs & Soundsystems</a>
+                    <a href="#">Venue Booking</a>
+                    <a href="#">Lightig and Technicals</a>
+                    <a href="#">InvitationDesign and Printing</a>
+                    <a href="#">SecurityServices</a>
+                </div>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+                <a href="#">Location</a>
+                <div class="dropdown">
+                    <a href="#">Banjara Hills</a>
+                    <a href="#">Jubilee Hills</a>
+                    <a href="#">Gachibowli</a>
+                    <a href="#">Hitech City</a>
+                    <a href="#">Madhapur</a>
+                    <a href="#">Secunderabad</a>
+                    <a href="#">Kondapur</a>
+                    <a href="#">Ameerpet</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- Main Section -->
+    
+          </header>
+ 
+    <section class="section">
+        <h2>Find the Best Event Services</h2>
+        <div class="services-container">
+            <!-- Decorators -->
+            <div class="service-card1">
+                <img src="https://housing.com/news/wp-content/uploads/2022/11/Designs-ideas-to-ease-your-mandap-decoration-at-home-compressed.jpg">
+                <h3>Decorators</h3>
+                <p>Explore beautiful decoration themes for your special occasion.</p>
+             </div>
+            <!-- Catering -->
+            <div class="service-card2">
+                <img src="https://cdn.shopify.com/s/files/1/2257/7809/files/wedding-catering_1024x1024.png?v=1715642945">
+                <h3>Catering</h3>
+                <p>Choose from a wide variety of delicious menus for your event.</p>
+            </div>
+            <!-- DJs -->
+            <div class="service-card3">
+                <img src="https://aaftonline.com/blog/wp-content/uploads/2024/02/A-Comprehensive-DJ-Setup-Guide-for-2024-Crafting-Your-Sonic-Haven-1.png">
+                <h3>DJ</h3>
+                <p>Set the mood with top DJs to get your party started.</p>
+            </div>
+            <div class="service-card4">
+                <img src="https://www.craftyartapp.com/blog/wp-content/uploads/2023/04/Brown-Aesthetic-Modern-Autumn-Mood-Board-Photo-Collage-Portrait-Instagram-Post.jpg">
+                <h3>InvitationDesigns and Printing</h3>
+                <p>Set the mood with top DJs to get your party started.</p>
+            </div>
+            <div class="service-card5">
+                <img src="https://cdn.prod.website-files.com/5fd2ba969b6ce08fc68b0904/64f7abc4498b85260aca7c20_cover.webp">
+                <h3>Photography</h3>
+                <p>Set the mood with top DJs to get your party started.</p>
+            </div>
+        </div>
+
+        <br><br><br>
+        <br><br><br>
+
+        <div class="popular">
+        <h3>Popular Searchs</h3>
+        <img src="https://dwpinsider.com/wp-content/uploads/2022/09/la-rein.gif" alt="Decor Trends">
+        <img src="https://www.weddingsutra.com/images/gyanjee-caterers-thumb-700x452.jpg?%3E">
+        <img src="https://i.pinimg.com/736x/b9/73/86/b97386304cf52b2072bbba27a83fbccf.jpg">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Event Service Connect | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+<style>
+body{
+  padding: 25px;
+}
+.title {
+	color: #5C6AC4;
+}
+h1{
+  text-align: center;
+}
+body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        
+        /* Navigation Bar Styles */
+        nav {
+           
+            padding: 15px 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            position: relative;
+            padding: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px;
+            display: block;
+            transition: background-color 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            background-color: #1e2a8a;
+            border-radius: 5px;
+      
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            display: none;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            width: 200px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+        .dropdown a {
+            color: #333;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease-in-out;
+
+        }
+        .dropdown a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Hover effect for the location dropdown */
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        /* Section Styles */
+        header {
+            background-color: #3f51b5;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            background-image: url('https://bookmyinfo.com/wp-content/uploads/2024/10/Best-Event-Management-Companies-In-Mumbai-1-1068x601.jpg');
+@media (max-width: 768px) {
+            background-image {
+                width: 40%; /* In smaller screens, image will cover 40% */
+            }
+        }
+
+        @media (max-width: 480px) {
+            background-image {
+                width: 60%; /* On very small screens, image will cover 60% */
+            }
+        }
+
+        }
+        @media (max-width: 768px) {
+            background-image {
+                width: 40%; /* In smaller screens, image will cover 40% */
+            }
+        }
+
+        @media (max-width: 480px) {
+            background-image {
+                width: 60%; /* On very small screens, image will cover 60% */
+            }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #3f51b5;
+        }
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+         
+        .image-box img {
+             width: 30%;
+             height: 200px;
+             object-fit: cover;
+             padding: 5px;
+padding-left:30px;
+
+        }        
+        .image-box {
+             color: black;
+        }
+.images{
+border-radius:1rem;
+padding-left:20px;
+
+}
+        
+</style>
+  </head>
+  <body>
+    <header>
+<h1>DecoraGo</h1>
+
+<marquee behavior="scroll" direction="left">🟡 Welcome to DecoraGo – Your Best Event Service Provider!</marquee>
+          
+     Navigation Bar 
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+               <a href="#">Services</a>
+                <div class="dropdown">
+                    <a href="#">Decorations</a>
+                    <a href="#">Catering Services</a>
+                    <a href="#">Photography</a>
+                    <a href="#">DJs & Soundsystems</a>
+                    <a href="#">Venue Booking</a>
+                    <a href="#">Lightig and Technicals</a>
+                    <a href="#">InvitationDesign and Printing</a>
+                    <a href="#">SecurityServices</a>
+                </div>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+                <a href="#">Location</a>
+                <div class="dropdown">
+                    <a href="#">Banjara Hills</a>
+                    <a href="#">Jubilee Hills</a>
+                    <a href="#">Gachibowli</a>
+                    <a href="#">Hitech City</a>
+                    <a href="#">Madhapur</a>
+                    <a href="#">Secunderabad</a>
+                    <a href="#">Kondapur</a>
+                    <a href="#">Ameerpet</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <button onclick="window.location.href='index.html'">Go-To Home</button>
+    <br><br><br>
+  
+ <div class="image-box">
+<h2>Traditonal Decorations</h2>
+<img  class=" images"src="https://content.jdmagicbox.com/v2/comp/hyderabad/n2/040pxx40.xx40.150928122744.y5n2/catalogue/thanusri-event-management-kompally-rangareddy-flower-decorators-v4vab8ub1t.jpg" width="20%" height="50%">
+<img  class=" images"src="https://www.qcdesignschool.com/blog/wp-content/uploads/2023/01/Event-decorators-Feature-Image.jpg" width="20%" height="50%">
+<img  class=" images"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6D37fDloveDFDyh2MTNcnP5lqO2z5Ua4-JXEso1gT4sWg9ZJSelOznH_2UwmdUPIVD5A&usqp=CAU" width="20%" height="50%">
+<img  class=" images"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeK_FR-VhBs4jcMzoF6T6qYnQi2htNbb76xw&s" width="20%" height="50%">
+
+</div>
+
+
+
+
+
+<div class="image-box">
+<h2>Corporative Decorations</h2>
+<img class="images" src=" https://zzeeh.com/wp-content/uploads/2023/02/the-ultimate-guide-to-planning-a-corporate-event.jpg" width="20%" height="50%">
+<img class="images" src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB9bChcXS6kQ9bX69jAStuDp1cn8jyE7Avww&s " width="20%" height="50%">
+<img class="images" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlzotttED2iM0QWZbXSlVbRS3NhAqNd9UAuQ&s " width="20%" height="50%">
+<img class="images" src="https://www.myplacedesign.ch/images/corporate-event.JPG " width="20%" height="50%">
+</div>
+
+
+
+
+
+   
+      <script src="script.js"></script>
+  </body>
+</html>
