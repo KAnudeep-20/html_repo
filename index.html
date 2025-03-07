@@ -16,7 +16,6 @@
         
         /* Navigation Bar Styles */
         nav {
-           
             padding: 15px 0;
         }
         nav ul {
@@ -41,7 +40,6 @@
         nav ul li a:hover {
             background-color: #1e2a8a;
             border-radius: 5px;
-      
         }
 
         /* Dropdown Menu */
@@ -63,7 +61,6 @@
             display: block;
             font-size: 1.1em;
             transition: background-color 0.3s ease-in-out;
-
         }
         .dropdown a:hover {
             background-color: #f1f1f1;
@@ -81,31 +78,17 @@
             padding: 20px 0;
             text-align: center;
             background-image: url('https://bookmyinfo.com/wp-content/uploads/2024/10/Best-Event-Management-Companies-In-Mumbai-1-1068x601.jpg');
-@media (max-width: 768px) {
-            background-image {
-                width: 40%; /* In smaller screens, image will cover 40% */
-            }
-        }
-
-        @media (max-width: 480px) {
-            background-image {
-                width: 60%; /* On very small screens, image will cover 60% */
-            }
-        }
-
         }
         @media (max-width: 768px) {
-            background-image {
-                width: 40%; /* In smaller screens, image will cover 40% */
+            header {
+                background-size: 40%;
             }
         }
-
         @media (max-width: 480px) {
-            background-image {
-                width: 60%; /* On very small screens, image will cover 60% */
+            header {
+                background-size: 60%;
             }
         }
-
         header h1 {
             margin: 0;
             font-size: 3em;
@@ -125,7 +108,7 @@
             flex-wrap: wrap;
             gap: 20px;
         }
-        .service-card1 {
+        .service-card {
             width: 350px;
             background-color: white;
             border-radius: 20px;
@@ -133,137 +116,46 @@
             overflow: hidden;
             transition: transform 0.3s ease-in-out;
         }
-        .service-card1:hover {
+        .service-card:hover {
             transform: scale(1.05);
         }
-        .service-card1 img {
+        .service-card img {
             width: 100%;
             height: 200px;
             object-fit: cover;
         }
-        .service-card1 h3 {
+        .service-card h3 {
             font-size: 1.8em;
             margin: 20px 0;
         }
-        .service-card1 p {
+        .service-card p {
             padding: 0 20px;
             font-size: 1.1em;
             color: #666;
         }
-        
-         .service-card2 {
-            width: 350px;
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease-in-out;
-        }
-        .service-card2:hover {
-            transform: scale(1.05);
-        }
-        .service-card2 img {
+        .service-card button {
+            display: block;
             width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .service-card2 h3 {
-            font-size: 1.8em;
-            margin: 20px 0;
-        }
-        .service-card2 p {
-            padding: 0 20px;
+            padding: 10px;
+            background-color: #3f51b5;
+            color: white;
+            border: none;
+            border-radius: 0 0 20px 20px;
+            cursor: pointer;
             font-size: 1.1em;
-            color: #666;
+            transition: background-color 0.3s ease-in-out;
         }
-
-         .service-card3 {
-            width: 350px;
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease-in-out;
-        }
-        .service-card3:hover {
-            transform: scale(1.05);
-        }
-        .service-card3 img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .service-card3 h3 {
-            font-size: 1.8em;
-            margin: 20px 0;
-        }
-        .service-card3 p {
-            padding: 0 20px;
-            font-size: 1.1em;
-            color: #666;
-        }
-
-         .service-card4 {
-            width: 350px;
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease-in-out;
-        }
-        .service-card4:hover {
-            transform: scale(1.05);
-        }
-        .service-card4 img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .service-card4 h3 {
-            font-size: 1.8em;
-            margin: 20px 0;
-        }
-        .service-card4 p {
-            padding: 0 20px;
-            font-size: 1.1em;
-            color: #666;
-        }
-
-         .service-card5 {
-            width: 350px;
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease-in-out;
-        }
-        .service-card5:hover {
-            transform: scale(1.05);
-        }
-        .service-card5 img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .service-card5 h3 {
-            font-size: 1.8em;
-            margin: 20px 0;
-        }
-        .service-card5 p {
-            padding: 0 20px;
-            font-size: 1.1em;
-            color: #666;
+        .service-card button:hover {
+            background-color: #1e2a8a;
         }
         .popular img {
-              width: 30%;
+            width: 30%;
             height: 200px;
             padding: 5px;
             object-fit: cover;
         }
-
-
         .footer {
-            background-color: #3f51b5;    
+            background-color: #3f51b5;
             color: white;
             text-align: center;
             padding: 20px;
@@ -274,26 +166,25 @@
         }
     </style>
 </head>
-`<body>
+<body>
 <header>
-<h1>DecoraGo</h1>
-        <p>Connecting You to the Best Event Service Providers</p>
-  
+    <h1>DecoraGo</h1>
+    <p>Connecting You to the Best Event Service Providers</p>
     <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
             <li>
-               <a href="#">Services</a>
+                <a href="#">Services</a>
                 <div class="dropdown">
                     <a href="#">Decorations</a>
                     <a href="#">Catering Services</a>
                     <a href="#">Photography</a>
                     <a href="#">DJs & Soundsystems</a>
                     <a href="#">Venue Booking</a>
-                    <a href="#">Lightig and Technicals</a>
-                    <a href="#">InvitationDesign and Printing</a>
-                    <a href="#">SecurityServices</a>
+                    <a href="#">Lighting and Technicals</a>
+                    <a href="#">Invitation Design and Printing</a>
+                    <a href="#">Security Services</a>
                 </div>
             </li>
             <li><a href="#">About Us</a></li>
@@ -313,58 +204,62 @@
             </li>
         </ul>
     </nav>
-    <!-- Main Section -->
-    
-          </header>
- 
-    <section class="section">
-        <h2>Find the Best Event Services</h2>
-        <div class="services-container">
-            <!-- Decorators -->
-            <div class="service-card1">
-                <img src="https://housing.com/news/wp-content/uploads/2022/11/Designs-ideas-to-ease-your-mandap-decoration-at-home-compressed.jpg">
-                <h3>Decorators</h3>
-                <p>Explore beautiful decoration themes for your special occasion.</p>
-                <button onclick="window.location.href='decor.html'">Go-To Home</button>button>
-             </div>
-            <!-- Catering -->
-            <div class="service-card2">
-                <img src="https://cdn.shopify.com/s/files/1/2257/7809/files/wedding-catering_1024x1024.png?v=1715642945">
-                <h3>Catering</h3>
-                <p>Choose from a wide variety of delicious menus for your event.</p>
-            </div>
-            <!-- DJs -->
-            <div class="service-card3">
-                <img src="https://aaftonline.com/blog/wp-content/uploads/2024/02/A-Comprehensive-DJ-Setup-Guide-for-2024-Crafting-Your-Sonic-Haven-1.png">
-                <h3>DJ</h3>
-                <p>Set the mood with top DJs to get your party started.</p>
-            </div>
-            <div class="service-card4">
-                <img src="https://www.craftyartapp.com/blog/wp-content/uploads/2023/04/Brown-Aesthetic-Modern-Autumn-Mood-Board-Photo-Collage-Portrait-Instagram-Post.jpg">
-                <h3>InvitationDesigns and Printing</h3>
-                <p>Set the mood with top DJs to get your party started.</p>
-            </div>
-            <div class="service-card5">
-                <img src="https://cdn.prod.website-files.com/5fd2ba969b6ce08fc68b0904/64f7abc4498b85260aca7c20_cover.webp">
-                <h3>Photography</h3>
-                <p>Set the mood with top DJs to get your party started.</p>
-            </div>
+</header>
+<!-- Main Section -->
+<section class="section">
+    <h2>Find the Best Event Services</h2>
+    <div class="services-container">
+        <!-- Decorators -->
+        <div class="service-card">
+            <img src="https://housing.com/news/wp-content/uploads/2022/11/Designs-ideas-to-ease-your-mandap-decoration-at-home-compressed.jpg">
+            <h3>Decorators</h3>
+            <p>Explore beautiful decoration themes for your special occasion.</p>
+            <button onclick="window.location.href='decor.html'">Go to Page</button>
         </div>
+        <!-- Catering -->
+        <div class="service-card">
+            <img src="https://cdn.shopify.com/s/files/1/2257/7809/files/wedding-catering_1024x1024.png?v=1715642945">
+            <h3>Catering</h3>
+            <p>Choose from a wide variety of delicious menus for your event.</p>
+            <button onclick="window.location.href='catering.html'">Go to Page</button>
+        </div>
+        <!-- DJs -->
+        <div class="service-card">
+            <img src="https://aaftonline.com/blog/wp-content/uploads/2024/02/A-Comprehensive-DJ-Setup-Guide-for-2024-Crafting-Your-Sonic-Haven-1.png">
+            <h3>DJ</h3>
+            <p>Set the mood with top DJs to get your party started.</p>
+            <button onclick="window.location.href='dj.html'">Go to Page</button>
+        </div>
+        <!-- Invitation Design and Printing -->
+        <div class="service-card">
+            <img src="https://www.craftyartapp.com/blog/wp-content/uploads/2023/04/Brown-Aesthetic-Modern-Autumn-Mood-Board-Photo-Collage-Portrait-Instagram-Post.jpg">
+            <h3>Invitation Design and Printing</h3>
+            <p>Create stunning invitations for your event.</p>
+            <button onclick="window.location.href='invitation.html'">Go to Page</button>
+        </div>
+        <!-- Photography -->
+        <div class="service-card">
+            <img src="https://cdn.prod.website-files.com/5fd2ba969b6ce08fc68b0904/64f7abc4498b85260aca7c20_cover.webp">
+            <h3>Photography</h3>
+            <p>Capture your special moments with professional photographers.</p>
+            <button onclick="window.location.href='photography.html'">Go to Page</button>
+        </div>
+    </div>
 
-        <br><br><br>
-        <br><br><br>
+    <br><br><br>
+    <br><br><br>
 
-        <div class="popular">
-        <h3>Popular Searchs</h3>
+    <div class="popular">
+        <h3>Popular Searches</h3>
         <img src="https://dwpinsider.com/wp-content/uploads/2022/09/la-rein.gif" alt="Decor Trends">
         <img src="https://www.weddingsutra.com/images/gyanjee-caterers-thumb-700x452.jpg?%3E">
         <img src="https://i.pinimg.com/736x/b9/73/86/b97386304cf52b2072bbba27a83fbccf.jpg">
-        </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Event Service Connect | All Rights Reserved</p>
-    </footer>
+<footer class="footer">
+    <p>&copy; 2025 Event Service Connect | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
